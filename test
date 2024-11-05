@@ -1,0 +1,2 @@
+/usr/bin/rsync -av  --delete --log-file=/app/synch_.log --exclude=servers/uat_bpm_admin/logs/ --exclude=nohup.out /app/aserver/bpm/uatbpm/ /app/test_sync_admin_bpm/
+/usr/bin/rsync -azP  --delete --log-file=/app/synch_to_server.log --exclude=servers/uat_bpm_admin/logs/ --exclude=nohup.out /app/aserver/bpm/uatbpm/ weblogic@10.87.211.73:/app/test_synch_antar_server/
